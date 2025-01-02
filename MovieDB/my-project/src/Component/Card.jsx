@@ -15,7 +15,7 @@ export const Card = ({ movie }) => {
       
       <div className="p-4">
         {/* Movie Title */}
-        <h5 className="text-xl font-bold mb-2">{title}</h5>
+        <h5 className="text-xl font-bold mb-2 ">{title}</h5>
 
         {/* Movie Overview */}
         <p className="text-sm text-gray-600 line-clamp-3">{overview}</p>

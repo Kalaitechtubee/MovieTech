@@ -122,7 +122,7 @@ export const Header = ({ data }) => {
             </div>
 
             {/* Mobile Search Bar */}
-            <div className="px-4 py-2">
+            <div className="px-4 py-2 text-black">
               <form onSubmit={handleSearch} className="w-full">
                 <input
                   type="text"
@@ -134,7 +134,7 @@ export const Header = ({ data }) => {
                 />
                 <button
                   type="submit"
-                  className="w-full mt-2 bg-blue-500 text-white py-2 rounded-md"
+                  className="w-full mt-2 bg-blue-500 text-black py-2 rounded-md"
                 >
                   Search
                 </button>
