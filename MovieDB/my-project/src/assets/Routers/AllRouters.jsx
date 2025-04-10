@@ -1,10 +1,11 @@
-
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ListMovie } from '../../Pages/ListMovie'; // Ensure proper export (either default or named)
 import { PageNotFound } from '../../Pages/PageNotFound'; // Ensure export
 import { MovieDetails } from '../../Pages/MovieDetails'; 
 import { Search } from '../../Pages/Search'; 
+import { TVShows } from '../../Pages/TVShows';
+import { TVShowDetails } from '../../Pages/TVShowDetails';
 
 
 const AllRouters = () => {
@@ -36,6 +37,18 @@ const AllRouters = () => {
         <Route 
         path="Trending/movie" 
         element={<ListMovie title="Trending Movie" apipath="trending/movie/day"/>} 
+      />
+      
+      {/* TV Shows */}
+      <Route 
+        path="tv" 
+        element={<TVShows />} 
+      />
+      
+      {/* TV Show Details */}
+      <Route 
+        path="tv/:id" 
+        element={<TVShowDetails />} 
       />
       
       {/* Search page */}
